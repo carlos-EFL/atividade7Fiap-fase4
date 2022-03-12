@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* sempre declarar a fonte do html usando Html font size 16x*/
+html{
+    font-size: 1em;
+    background: linear-gradient(to right, #b297df, #18f6c6 , #66e8ff );
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* sroll-behavior para rolagem suave de pagina html */
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+fieldset {
+    border:none;
+    
+}
+
+/**************************** login *********************************/
+.login {
+    width: 17.5em;
+    height: 21em;
+    margin: 15em auto;
+    padding: .8em .8em 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    background-color:rgba(0,0,0,0.5) !important;
+    border-radius: .8em;
+    
+    
+}
+ /* titulo login */
+
+.login-title {
+    color: #fff;
+    padding:10px 0 20px;
+ 
+}
+/* fim titulo login */
+
+/* input  */
+.login-in{
+    /* cor do texto lembrar */
+    color:#fff; 
+         
+}
+
+.user-id {
+  padding-left: 2em;
+  background: url(/img/user.svg) no-repeat left;
+  background-size: 1,5em;
+  background-color: #fff;
+  height: 2.2em;
+  margin-bottom: 0.8em;
+  display: flex;
+  flex-direction: column; width: 17em ;
+  border: none;
+  border-radius: 5px;
+    
+}
+
+.icon-pass {
+  padding-left: 2em;
+  background: url(/img/key.svg) no-repeat left;
+  background-size: 1,5em;
+  background-color: #fff;
+  height: 2.2em;
+  margin-bottom: 0.8em;
+  display: flex;
+  flex-direction: column; width: 17em ;
+  border: none;
+  border-radius: 5px;
+    
+}
+
+/* fim input  */
+
+/* btn login */
+
+.btn {
+   padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(20, 19, 19);
+    margin-bottom: 16px 0;
+    transition: .7s;
+}
+
+.btn:hover {
+    background: #60f8f8;
+    color: black;
+        
+}
+
+/* fim btn login */
+
+/* inicio de cadastro  */
+
+.account{
+    margin-top:1em;
+    display: flex;
+    padding-top: .8em;
+    margin-left: .2em;
+}
+
+.text h1{
+    font-size: 1em;
+    color: aqua;
+}
+.text a{
+    color:rgb(248, 108, 108);
+    font-size: 1em;
+    margin-left: .5em;    
+}
+.text a:hover{
+    color:#2fe0ff ;
+}
+
+.forgot a{
+    margin-left: .2em;
+    color:aqua;
+    font-size: .9em;
+    
+}
+.forgot a:hover{
+    color:#adff2f ;
+
+}             
+/* fim de cadastro  */
+
+/******************* mobile **********************/
+@media(max-width: 720px) {
+    .btn{
+    font-size: 1.2em;
+    margin-top:.4em;
+    margin-bottom: 10px;
+    margin-left: 8em;
+    flex-direction: column;
+    align-self: flex-end;
+
+
+    }
+    .login {    
+    margin: 10em auto;
+    padding: 5px 5px 20px;
+    }    
+}
+
+/******************* fim mobile **********************/
+    
